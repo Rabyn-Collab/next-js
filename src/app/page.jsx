@@ -1,6 +1,3 @@
-import { Suspense } from "react"
-import MovieList from "./movies/MovieList"
-import Loading from "./loading"
 
 
 
@@ -11,9 +8,6 @@ const Home = () => {
       <h1>Welcome to Movie Datasets</h1>
 
 
-      <Suspense fallback={<Loading />} >
-        <MovieList />
-      </Suspense>
 
 
 
