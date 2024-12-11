@@ -1,12 +1,14 @@
+import axios from "axios";
 import Link from "next/link";
 
 
 const getData = async () => {
   const res = await fetch('https://6756626911ce847c992c9f4c.mockapi.io/movies', {
     next: {
-      revalidate: 10
+      revalidate: 0
     }
   });
+
   return res.json();
 }
 
